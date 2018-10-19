@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="freaktemplate.fooddelivery.OrderSpecification">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:rotationY="180"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/ib_back"
+            android:text="@string/txt_order_specifications"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_line"
+        android:layout_below="@+id/rel_title" />
+
+    <RelativeLayout
+        android:id="@+id/rel_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rel_total"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/horizontal_border" />
+
+    <RelativeLayout
+        android:id="@+id/rel_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/txt_total_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_total"
+            android:textColor="@color/lightGrey"
+            android:textSize="@dimen/medium"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/txt_finalans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="$ 254.00"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

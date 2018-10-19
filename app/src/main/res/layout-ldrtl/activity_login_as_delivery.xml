@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="freaktemplate.fooddelivery.Login">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:tint="@color/white"
+            android:rotationY="180"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:text="@string/delivery_boy_login"
+            android:textColor="#fff"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/rel_header"
+
+        >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/img_delivery"
+                    android:layout_marginTop="16dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_loginscreen"
+                    android:contentDescription="@string/img_delivery"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/img_delivery"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="viewStart"
+                        android:hint="@string/email_required"
+                        android:textSize="@dimen/medium"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000"
+                        tools:ignore="SpUsage" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_email"
+                    >
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edit_pwd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/medium"
+                        android:hint="@string/passward_required"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        tools:ignore="SpUsage" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/input_layout_password"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/login_btn_bg"
+                    android:text="@string/txt_login"
+                    android:textAllCaps="false"
+                    android:textColor="#8D1926"
+                    android:textSize="@dimen/medium"
+                    tools:ignore="SpUsage" />
+
+
+
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

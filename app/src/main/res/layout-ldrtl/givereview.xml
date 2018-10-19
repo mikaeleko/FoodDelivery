@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:background="@drawable/dailog_box_bg">
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/txt_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Experience"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/large"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/rl_text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+              >
+
+                <TextView
+                    android:id="@+id/txt_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/lightGrey"
+                    android:text="YOUR RATING"
+                    android:textSize="@dimen/small"
+                    tools:ignore="SpUsage" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/txt_text"
+                 >
+
+                    <RatingBar
+                        android:id="@+id/rate1234"
+                        android:layout_marginStart="65dp"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleY="0.7"
+                        android:scaleX="0.7"
+                        android:transformPivotX="0dp"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                       android:stepSize="1.0" />
+
+                    <TextView
+                        android:id="@+id/txt_ratenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="-46dp"
+                        android:text="0.0"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        tools:ignore="SpUsage" />
+                </LinearLayout>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="8dp"
+                android:includeFontPadding="false"
+                android:layout_marginStart="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:gravity="top|start"
+                android:layout_below="@+id/rel_text"
+                android:layout_marginEnd="10dp"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="3"
+                android:background="@android:color/transparent"
+                android:hint="Please write about your personal experience at this restaurant"
+                android:textSize="@dimen/small"
+                android:textColor="#000000"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_description"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/small"
+                    tools:ignore="SpUsage" />
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/small"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

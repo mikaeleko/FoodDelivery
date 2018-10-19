@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context="freaktemplate.fooddelivery.CompleteOrder">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:tint="@color/white"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_marginStart="16dp"
+            android:text="@string/order_status"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rel_title"
+        android:background="#EAEBED">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="12dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/next_arrow" />
+
+        <TextView
+            android:id="@+id/txt_orderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="@string/txt_order_no"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_order">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rel_main"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:fitsSystemWindows="true"
+                            android:requiresFadingEdge="horizontal"
+                            android:scaleType="fitXY" />
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/rel_img"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/rel_img">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:text="Royal Restaurant"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/medium"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:id="@+id/txt_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_name"
+                        android:layout_marginTop="5dp"
+                        android:lines="1"
+                        android:text="4,street,Ney York Central,New York,12359 "
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/lightGrey"
+                        android:textSize="@dimen/dp_12"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:id="@+id/txt_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_address"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:text="+09-6565625-52"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/lightGrey"
+                        android:textSize="@dimen/dp_12"
+                        tools:ignore="SpUsage" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_order_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_main"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_order_title"
+                        style="@style/orderTextView"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/txt_order_no"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/txt_order"
+                        style="@style/orderTextView"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp"
+                        android:text="FB2130"
+                        android:textAlignment="viewStart" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_order_amount_title"
+                        style="@style/orderTextView"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/txt_order_amount" />
+
+                    <TextView
+                        android:id="@+id/txt_order_amount"
+                        style="@style/orderTextView"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp"
+                        android:text="$30.00"
+                        android:textAlignment="viewStart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_order_estimatedtime_title"
+                        style="@style/orderTextView"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/txt_estimated_delivery_time" />
+
+                    <TextView
+                        android:id="@+id/txt_order_estimatedtime"
+                        style="@style/orderTextView"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp"
+                        android:text="20/03/2018 05:40"
+                        android:textAlignment="viewStart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_order_time_title"
+                        style="@style/orderTextView"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/txt_order_time" />
+
+                    <TextView
+                        android:id="@+id/txt_order_time"
+                        style="@style/orderTextView"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp"
+                        android:text="20/03/2018 05:10"
+                        android:textAlignment="viewStart" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_timeline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_order_details"
+                android:layout_marginTop="8dp"
+                android:background="#EAEBED">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/time_line"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/order_timeline"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btn_placeorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/place_order_btn"
+                    android:text="@string/txt_complete_order"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

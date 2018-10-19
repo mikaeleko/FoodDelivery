@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/cell_fav"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/box_img_fav"
+            android:layout_marginStart="15dp"
+            >
+          <TextView
+              android:id="@+id/txt_first"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="0dp"
+              android:layout_marginStart="0dp"
+              android:textSize="24dp"
+              android:text="R"
+              android:textColor="#5e6a6e"
+              android:gravity="center"
+              android:background="@android:color/transparent"
+              tools:ignore="SpUsage" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_middle"
+            android:layout_toEndOf="@+id/rel_img"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:includeFontPadding="false"
+                android:text="Royal Restaurents"
+                android:textSize="@dimen/large"
+                android:textColor="#5e6a6e"
+                tools:ignore="SpUsage" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/rel_img"
+            android:layout_below="@+id/rel_middle"
+            android:layout_marginStart="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGrey"
+                android:text="2 Km "
+                tools:ignore="SpUsage" />
+            <TextView
+                android:id="@+id/txt_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:layout_marginEnd="30dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/darkGrey"
+                android:lines="2"
+                android:maxLines="2"
+                android:textSize="13dp"
+                tools:ignore="SpUsage" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

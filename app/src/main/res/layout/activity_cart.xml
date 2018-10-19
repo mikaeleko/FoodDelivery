@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="freaktemplate.fooddelivery.Cart">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cart"
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/cart_icon"
+            android:paddingBottom="6dp"
+            android:paddingStart="10dp"
+            android:text="0"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/txt_cart"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_line"
+        android:layout_below="@+id/rel_main"
+
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rel_total"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/horizontal_border"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_total"
+            android:textColor="@color/lightGrey"
+            android:textSize="@dimen/medium"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/txt_finalans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="@dimen/medium"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/checkout_btn"
+            android:text="@string/txt_checkout"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/medium"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

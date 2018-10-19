@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/rel_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="18dp"
+            android:paddingStart="18dp">
+
+            <TextView
+                android:id="@+id/txt_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="CARBONARA SPAGHETTI "
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Italian, Lettuce,Onions,Iced Lemon Tea,italian,Onions,Iced, Oninoce, Iced Lemon Tea. Lemon Tea."
+                android:textAlignment="viewStart"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_head"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp">
+
+                <TextView
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ll_quantity"
+                    android:layout_alignStart="@+id/ll_quantity"
+                    android:gravity="center"
+                    android:text="@string/QUANTITY"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/dp_12"
+                    tools:ignore="SpUsage" />
+
+                <LinearLayout
+                    android:id="@+id/ll_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_quantity"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_minus1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/minus_icon_cart" />
+
+                    <EditText
+                        android:id="@+id/edTextQuantity"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0"
+                        android:textColor="@color/darkGrey"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/medium"
+
+                        tools:ignore="SpUsage" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_plus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/plus_icon_cart" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_quan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp">
+
+                <TextView
+                    android:id="@+id/txt_basic_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/BASIC_PRICE"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/dp_12"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/txt_totalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/txt_basic_price"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignStart="@+id/txt_basic_price"
+                    android:layout_below="@+id/txt_basic_price"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="$40.00"
+                    android:textColor="#F9622D"
+                    android:textSize="@dimen/medium"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/rel_quan"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:src="@color/light_grey" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

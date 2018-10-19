@@ -1,0 +1,228 @@
+<resources>
+
+
+    <!-- SHOW HIDE ADMOB ADS -->
+
+    <string name="show_admob_ads">no</string>
+
+
+    <!-- ADMOB ADS IDS -->
+
+    <string name="admob_banner_id">ca-app-pub-4643384715195426/7256921228</string>
+    <string name="admob_insertitial_id">ca-app-pub-4643384715195426/5816094466</string>
+
+    <!--app name-->
+    <string name="app_name">الملبي</string>
+
+
+    <!--facebook id-->
+    <string name="facebook_app_id">388235654995086</string>
+    <string name="fb_login_protocol_scheme">fb388235654995086</string>
+
+    <!--google Geo Location api key-->
+    <string name="geoGoogleApi">AIzaSyBSBLYDM8K2xu4Hh1myZN0p3R3Bjqwbgus</string>
+
+    <!--service link-->
+    <string name="link">http://drpll.com/bbc/</string>
+    <string name="servicepath">api/</string>
+    <string name="imagepath">uploads/restaurant/</string>
+
+    <!--General text-->
+    <string name="later_txt">يرجى المحاولة في وقت لاحق!</string>
+    <string name="internet_check_error">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="text_warning">إشعار</string>
+    <string name="colorErrorDialog">#303c44</string>
+    <string name="txt_load_more">تحميل المزيد</string>
+    <string name="loading">جار التحميل</string>
+    <string name="currency">$</string>
+    <string name="ok">نعم</string>
+    <string name="address">34, Medisam Square, New York Street, New York</string>
+    <string name="servererror">لاتوجد بيانات</string>
+    <string name="Quit">خروج</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="statementquit">هل أنت متأكد من أنك تريد الخروج؟</string>
+    <string name="txt_gotogps">صفحة إعدادات Goto لتمكين GPS</string>
+    <string name="txt_gps_error">تم تعطيل نظام تحديد المواقع العالمي في جهازك. هل ترغب في تمكينها؟</string>
+    <string name="txt_try_later">يرجى المحاولة في وقت لاحق!</string>
+    <string name="txt_load">جار التحميل</string>
+
+
+    <!--<About Us-->
+    <string name="txt_aboutus">معلومات عنا</string>
+    <string name="aboutus_filename">aboutus.html</string>
+
+    <!--<Terms and condition-->
+    <string name="terms_and_conditions">الشروط</string>
+    <string name="terms_condition_filename">tnc.html</string>
+
+
+    <!--<Most Rated Restaurant-->
+    <string name="txt_most_rated_restaurant">مطعم الأكثر تقييما</string>
+
+
+    <!--Cart-->
+    <string name="txt_cart">عربة التسوق</string>
+    <string name="txt_checkout">الدفع</string>
+    <string name="norecord">لا توجد سجلات</string>
+    <string name="loginmsg">يجب عليك تسجيل الدخول أولاً!</string>
+    <string name="BASIC_PRICE">السعر الأساسي</string>
+    <string name="QUANTITY">كمية</string>
+
+    <!--Category-->
+    <string name="txt_category">الفئة</string>
+    <string name="txt_search">بحث</string>
+
+
+    <!--Complete Order-->
+    <string name="order_status">حالة الطلب</string>
+    <string name="txt_order_no">رقم الطلب</string>
+    <string name="txt_order_amount">كمية الطلب</string>
+    <string name="txt_estimated_delivery_time">تقدير وقت التسليم</string>
+    <string name="txt_order_time">وقت الطلب</string>
+    <string name="txt_complete_order">اكمل الطلب</string>
+
+
+    <!--Detail Page-->
+    <string name="txt_address">عنوان</string>
+    <string name="txt_phone_number">رقم الهاتف</string>
+    <string name="txt_timing">توقيت</string>
+    <string name="txt_food_type">نوع الغذاء</string>
+    <string name="txt_delivery_time">موعد التسليم</string>
+    <string name="txt_delivery_type">نوع التوصيل</string>
+    <string name="txt_menu">قائمة طعام</string>
+    <string name="share">شارك!</string>
+    <string name="sharetitle">مشاركة مطعم مع</string>
+    <string name="more">أكثر من</string>
+    <string name="facebook">فيسبوك</string>
+    <string name="whatsapp">واتساب</string>
+    <string name="km">كم</string>
+
+
+    <!--Location-->
+
+
+    <!--Login-->
+    <string name="login_with_google">تسجيل دخول بحساب قوقل</string>
+    <string name="login_with_delivery">تسجيل الدخول كصديق التسليم</string>
+    <string name="login_with_facebook">تسجيل دخول بحساب فيسبوك</string>
+    <string name="txt_new_register">انشاء حساب جديد</string>
+    <string name="or">أو</string>
+    <string name="txt_login">تسجيل الدخول</string>
+    <string name="txt_password">كلمة السر</string>
+    <string name="txt_email">الايميل</string>
+    <string name="err_msg_password">أدخل كلمة مرورصحيحة</string>
+    <string name="err_msg_email">Enter Valid Email_id</string>
+    <string name="err_msg_name">ادخل اسم صحيح</string>
+    <string name="err_msg_phone">أدخل رقم الهاتف الصحيح</string>
+    <string name="txt_valid_phone_number">رقم الهاتف صحيح</string>
+    <string name="txt_invalid_phonenumber">رقم الهاتف غير صحيح</string>
+    <string name="txt_phone_required">رقم الهاتف مطلوب</string>
+    <string name="img_delivery">img_delivery</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="phone_description">نطلب رقم هاتفك للاتصال بنا أثناء تسليم طلبك ، كما نضمن أن بياناتك آمنة معنا ولن نسيء استخدام بياناتك بخلاف الغرض من التسليم </string>
+
+    <!--Register-->
+    <string name="txt_take_a_picture">التقط صوره</string>
+    <string name="txt_select_picture">اختر الصورة</string>
+    <string name="hint_phone_number">رقم الهاتف</string>
+    <string name="hint_email_address">عنوان البريد الإلكتروني</string>
+    <string name="hint_password">كلمة السر</string>
+    <string name="agree_t_and_c"><![CDATA[I agree to the T & C]]></string>
+    <string name="hint_full_name">الاسم الكامل</string>
+    <string name="signup">سجل</string>
+    <string name="register">تسجيل</string>
+
+
+    <!--MapActivity-->
+    <string name="txt_map">خريطة</string>
+    <string name="txt_more">أكثر من</string>
+    <string name="no_internet">لا اتصال إنترنت</string>
+    <string name="no_map">آسف! غير قادر على إنشاء الخرائط</string>
+    <string name="no_restaurant">لا مزيد من المطاعم</string>
+    <string name="opentill">فتح: مفتوح ل</string>
+    <string name="closetill">إغلاق: مفتوح في</string>
+
+    <!--My Order-->
+    <string name="txt_my_orders">طلباتي</string>
+
+
+    <!--Review-->
+    <string name="txt_review">إعادة النظر</string>
+    <string name="revlogin">يجب عليك تسجيل الدخول للعرض</string>
+    <string name="review_hint">يرجى الكتابة عن تجربتك الشخصية في هذا المطعم</string>
+
+
+    <!--SettingPage-->
+    <string name="txt_settings">إعدادات</string>
+    <string name="txt_search_by_radius">البحث عن طريق الشعاع</string>
+    <string name="txt_distance">مسافه: بعد</string>
+    <string name="txt_radius">نصف القطر</string>
+    <string name="txt_current_location">الموقع الحالي</string>
+    <string name="action_settings">إعدادات</string>
+
+
+    <!--PlaceOrder-->
+    <string name="txt_select_location">اختر موقعا</string>
+    <string name="txt_select_address">اختر العنوان من الخريطة</string>
+    <string name="txt_notes">ملاحظات</string>
+    <string name="txt_place_order">مكان الامر</string>
+    <string name="notbooked">يرجى المحاولة مرة أخرى. لم يتم حجز طلبك.</string>
+    <string name="error_lat_long">خط العرض وخط الطول غير صالحين!</string>
+
+
+    <!--googleAutoCompleteSearch-->
+    <string name="plese_enter_place">من فضلك أدخل المكان</string>
+
+
+    <!--Navigation Bar -->
+    <string name="txt_search_restaurent">بحث مطعم</string>
+    <string name="txt_search_on_map">البحث على الخريطة</string>
+    <string name="txt_suggested_restaurent">مطعم الأكثر تقييما</string>
+    <string name="txt_cusine">أطباق</string>
+    <string name="txt_favourite">مفضل</string>
+    <string name="txt_share">شارك</string>
+    <string name="txt_terms_amp_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="txt_about_us">معلومات عنا</string>
+    <string name="txt_signin">تسجيل الدخول</string>
+    <string name="txt_profile">الملف الشخصي</string>
+    <string name="txt_notification">طلباتي</string>
+    <string name="drawer_open">افتح</string>
+    <string name="drawer_close">أغلق</string>
+
+    <!--MainActivity-->
+    <string name="txt_home_header">الرئيسية</string>
+    <string name="search">بحث عن المطاعم والمأكولات ...</string>
+    <string name="txt_signout">خروج</string>
+    <string name="noorder">لم يتم تلقي أي طلب حتى الآن!</string>
+    <string name="error_logout">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+
+    <!--Place order-->
+    <string name="confirmorder1">يتم وضع طلبك مع البند</string>
+    <string name="confirmorder2">المبلغ الإجمالي هو </string>
+    <string name="txt_description">وصف =</string>
+    <string name="txt_price">السعر =</string>
+    <string name="txt_quantity">الكمية =</string>
+    <string name="txt_total">مجموع</string>
+
+    <!--CompleteOrder Timeline order status-->
+    <string name="timelineo1">وقد وضعت طلبك</string>
+    <string name="timelineo2">تم التحقق من الطلب بواسطة المطعم</string>
+    <string name="timelineo3">النظام هو معالجة</string>
+    <string name="timelineo4">النظام هو خارج للتسليم</string>
+    <string name="timelineo5">يتم تسليم النظام</string>
+
+    <!--Login as delivery-->
+    <string name="delivery_boy_login">تسليم الصبي تسجيل الدخول</string>
+    <string name="email_required">البريد الألكتروني (مطلوب)</string>
+    <string name="passward_required">كلمة المرور مطلوبة</string>
+    <string name="txt_setPresence">تعيين حضورك</string>
+    <string name="no_order_left">لم يكن لديك أي تسليم معلقة بعد ، والبقاء على الانترنت سوف تحصل على التسليم في وقت قريب.</string>
+    <string name="txt_call_customer">اتصل بالعميل</string>
+    <string name="txt_view_map">إعرض الخريطة</string>
+    <string name="txt_order_history">تاريخ الطلب</string>
+    <string name="txt_my_profile">ملفي الشخصي</string>
+    <string name="txt_sign_out">خروج</string>
+    <string name="txt_delivery_boy">فتى التوصيل</string>
+    <string name="txt_order_specifications">مواصفات الطلب</string>
+</resources>

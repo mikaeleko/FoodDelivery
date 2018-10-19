@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="freaktemplate.fooddelivery.PlaceOrder">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:text="Delivery Information"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+    android:layout_below="@id/rel_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/txt_address_input"
+            android:layout_margin="10dp">
+
+            <fragment
+                android:id="@+id/mapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_selectlocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/mapFragment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="45dp"
+                android:background="#39424B"
+                android:text="@string/txt_select_location"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                tools:ignore="SpUsage" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_above="@+id/txt_notes_input"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/txt_select_address"
+            android:maxLines="2"
+            android:textSize="18dp"
+            tools:ignore="SpUsage">
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_box_underline_selector"
+                android:inputType="textPostalAddress"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="#000"
+                android:textSize="@dimen/medium"
+                tools:ignore="SpUsage" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_above="@+id/rel_bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:hint="@string/txt_notes"
+            android:maxLines="2"
+            android:textSize="18dp"
+            tools:ignore="SpUsage">
+
+            <EditText
+                android:id="@+id/edt_note"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_box_underline_selector"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="#000"
+                android:textSize="@dimen/medium"
+                tools:ignore="SpUsage" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+>
+
+            <Button
+                android:id="@+id/btn_placeorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/place_order_btn"
+                android:text="@string/txt_place_order"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                tools:ignore="SpUsage" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_infodialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+
+</RelativeLayout>

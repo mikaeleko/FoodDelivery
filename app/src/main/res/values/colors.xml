@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303c44</color>
+    <color name="colorPrimaryDark">#303C44</color>
+    <color name="colorAccent">#3c3c3c</color>
+
+
+    <color name="green">#14B457</color>
+    <color name="orange">#F27466</color>
+    <color name="toolbarcolor">#303C44</color>
+    <color name="orderbg">#88898b</color>
+    <color name="colormark">#E76430</color>
+    <color name="res_green">#14B457</color>
+    <color name="res_orange">#E76232</color>
+    <color name="light_grey">#C6CACD</color>
+    <color name="my_statusbar_color">#828d94</color>
+    <color name="txt_orange">#F1621C</color>
+    <color name="txt_white">#FFF</color>
+
+    <!--Main text color-->
+    <color name="darkGrey">#535252</color>
+    <color name="lightGrey">#747474</color>
+
+    <color name="white">#FFFF</color>
+    <color name="black">#000</color>
+    <color name="red">#b71c1c</color>
+</resources>

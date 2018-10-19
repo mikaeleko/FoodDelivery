@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DeliveryOrderDetail">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:tint="@color/white"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Order No FB102"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/rel_header">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/img_orderprocess">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:id="@+id/rel_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/img_user"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txt_orderAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="Order Amount $200"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/large"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_orderQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="3 Items"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/small"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_orderPaymentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="Payment:COD"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/small"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_orderDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="21/08/2018 2.30 PM"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/tiny"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rel_main"
+        android:background="#F0EFEF" />
+
+    <RelativeLayout
+        android:id="@+id/rel_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lines="1"
+            android:text="Customer Name"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/medium"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:paddingStart="0dp"
+            android:paddingEnd="20dp"
+            android:text="4,street,Ney York Central,New York,12359 "
+            android:textColor="@color/lightGrey"
+            android:textSize="@dimen/small"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/txt_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="+09-6565625-52"
+            android:textColor="@color/lightGrey"
+            android:textSize="@dimen/small"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/custom_toobar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rel_fourth"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rel_third"
+/>
+    <ListView
+        android:id="@+id/list_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_below="@+id/rel_fourth" />
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+       >
+
+        <Button
+            android:id="@+id/btn_picked"
+            style="@style/Delivery_button"
+            android:background="@color/res_orange"
+            android:text="Picked"
+            android:textAllCaps="true"
+            android:textSize="@dimen/large"
+            tools:ignore="SpUsage" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

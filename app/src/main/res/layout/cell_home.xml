@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:transitionName="@string/app_name"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFF"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+           android:layout_centerVertical="true">
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="8dp"
+               >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:fitsSystemWindows="true"
+                    android:requiresFadingEdge="horizontal"
+                    android:scaleType="fitXY" />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_side"
+            android:layout_width="68dp"
+            android:layout_height="80dp"
+            android:background="#DFDDDD"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:layout_above="@+id/txt_distance_string"
+                android:lines="1"
+                android:text="25"
+                android:lineSpacingExtra="0dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/res_green"
+                android:textSize="15dp"
+                tools:ignore="SpUsage" />
+            <TextView
+                android:id="@+id/txt_distance_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/view"
+                android:lineSpacingExtra="0dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="top"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="Minute"
+                android:textColor="@color/res_green"
+                android:textSize="8dp"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/border_2"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:focusable="false" />
+
+
+            <TextView
+                android:id="@+id/txt_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:text="4.5"
+                android:textColor="@color/res_orange"
+                android:textSize="15dp"
+                tools:ignore="SpUsage" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:textSize="8dp"
+                android:layout_below="@+id/txt_rating"
+                android:textColor="@color/res_orange"
+                android:layout_centerHorizontal="true"
+                android:text="Ratings"
+                tools:ignore="SpUsage" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/rel_side"
+            android:layout_toEndOf="@+id/rel_img">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/darkGrey"
+                android:lines="1"
+                android:textSize="@dimen/medium"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_category"
+                android:layout_width="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:lines="1"
+                android:textColor="@color/lightGrey"
+                android:textSize="11dp"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/divider"
+                android:layout_below="@+id/txt_category"
+                android:src="@drawable/border_1"
+                android:scaleType="fitXY"
+                android:paddingEnd="30dp"
+                android:paddingStart="0dp"
+                android:clickable="false"
+                android:focusable="false"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/divider"
+               >
+
+                <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:maxLines="1"
+                    android:textColor="@color/res_green"
+                    android:textSize="11dp"
+                    tools:ignore="SpUsage" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:maxLines="1"
+                    android:textSize="11dp"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

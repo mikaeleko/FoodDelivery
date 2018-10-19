@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeliveryUserProfile">
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:tint="@color/white"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="My Profile"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/toolbartitle"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Name"
+        android:id="@+id/txt_name_tittle"
+        android:gravity="center"
+        android:textSize="@dimen/medium"
+        android:textColor="@color/lightGrey"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Due"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/txt_name"
+
+        android:gravity="center"
+        android:textSize="@dimen/medium"
+        android:textColor="@color/black"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0EFEF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Contact No"
+            android:gravity="center"
+            android:id="@+id/txt_contact_tittle"
+
+            android:textSize="16dp"
+            android:textColor="@color/lightGrey"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+12-256-58896-6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/txt_contact"
+
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0EFEF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Email"
+            android:id="@+id/txt_email_tittle"
+
+            android:gravity="center"
+            android:textSize="@dimen/medium"
+            android:textColor="@color/lightGrey"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JohnDue@gmail.com"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/txt_email"
+
+            android:gravity="center"
+            android:textSize="@dimen/medium"
+            android:textColor="@color/black"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0EFEF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Vehicle No"
+            android:id="@+id/txt_vehicle_no_tittle"
+
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/lightGrey"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ML 4065"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/txt_vehicle_no"
+            android:gravity="center"
+            android:textSize="@dimen/medium"
+            android:textColor="@color/black"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0EFEF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Vehicle Type"
+            android:id="@+id/txt_vehicle_type_tittle"
+            android:gravity="center"
+            android:textSize="@dimen/medium"
+            android:textColor="@color/lightGrey"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bike"
+            android:id="@+id/txt_vehicle_type"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textSize="@dimen/medium"
+            android:textColor="@color/black"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0EFEF"/>
+
+</LinearLayout>
